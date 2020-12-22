@@ -99,7 +99,7 @@
   }
 
   test(() => {
-    // Transfariable stream was first enabled in chrome v73 behind a flag
+    // Transferable stream was first enabled in chrome v73 behind a flag
     const { readable } = new TransformStream()
     const mc = new MessageChannel()
     mc.port1.postMessage(readable, [readable])
